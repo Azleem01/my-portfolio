@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs / misc
+*.log
+node_modules/
+
+# Build artifact (deploy bundle) and local agent config
+portfolio-deploy.zip
+.claude/
