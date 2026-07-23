@@ -385,6 +385,61 @@ img { max-width: 100%; display: block; }
 }
 .card-link:hover { color: var(--accent); gap: 10px; }
 
+.hero-page { padding-top: 72px; }
+
+.project-gallery {
+  display: grid;
+  gap: 28px;
+}
+
+.card.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.project-visual,
+.project-placeholder {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--chrome-line);
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(238,241,245,0.88));
+  box-shadow: var(--shadow-soft);
+}
+
+.project-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.project-visual figcaption {
+  padding: 18px 20px;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  background: rgba(255,255,255,0.92);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.project-placeholder {
+  min-height: 260px;
+  display: grid;
+  place-items: center;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 30px 20px;
+  border-style: dashed;
+}
+
 /* ============================ SKILLS ============================ */
 .chips { display: flex; flex-wrap: wrap; gap: 12px; max-width: 860px; }
 .chip {

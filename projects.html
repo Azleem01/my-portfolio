@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Azeez Aleem</title>
+  <meta name="description" content="Project showcase for Sentinel AI, Flashcard AI, and AI safety tooling by Azeez Aleem." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand-orb" aria-hidden="true"></span>
+        <span class="brand-name">Azeez Aleem</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html#contact">Contact</a>
+        <a class="nav-cta" href="about.html#contact">Get in touch</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-shell hero-page">
+      <div class="hero reveal">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">PROJECTS</p>
+          <h1 class="display">Work you can see, evaluate, and trust.</h1>
+          <p class="hero-lead">
+            Each project includes a real product snapshot and a plain-language explanation of what the client is looking at.
+            Visuals make it easier to understand impact, not just technology names.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#project-list">Browse gallery</a>
+            <a class="btn btn-ghost" href="about.html">About me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="project-list">
+      <div class="section-inner">
+        <div class="section-head reveal">
+          <p class="kicker">SHOWCASE</p>
+          <h2 class="section-title big">Project snapshots</h2>
+          <p class="section-desc">
+            Professional visuals and plain-language captions so clients can immediately see what each application does.
+          </p>
+        </div>
+
+        <div class="project-gallery">
+          <article class="card project-card reveal" id="sentinel-ai">
+            <div class="card-top">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <span class="card-flag">Technical Lead</span>
+            </div>
+            <h3 class="card-title">Sentinel AI</h3>
+            <p class="card-body">
+              Emergency-department triage decision support for the Imperial College Global Challenge Lab.
+              This screenshot shows the prototype dashboard that helps a clinician prioritise patients by predicted risk.
+            </p>
+            <figure class="project-visual">
+              <img src="assets/sentinel ai.jpg.jpeg" alt="Sentinel AI dashboard showing patient triage categories and risk scores" />
+              <figcaption>On the left are patient cards and risk categories; on the right, the model's high-risk queue is highlighted to help clinical teams decide who to see first.</figcaption>
+            </figure>
+            <div class="tags">
+              <span>Healthcare AI</span><span>FastAPI</span><span>XGBoost</span><span>React</span>
+            </div>
+            <a class="card-link" href="https://github.com/Azleem01/Sentinel-ai" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+            </a>
+          </article>
+
+          <article class="card project-card reveal" id="flashcard-ai">
+            <div class="card-top">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h10M7 13h6"/></svg>
+              </span>
+              <span class="card-flag subtle">Production app</span>
+            </div>
+            <h3 class="card-title">Flashcard AI</h3>
+            <p class="card-body">
+              A study app that converts screenshot content into flashcards and review prompts.
+              These visuals explain the interface so clients understand how the model output becomes a study tool.
+            </p>
+            <div class="project-grid">
+              <figure class="project-visual">
+                <img src="assets/flashcard ai 1.jpeg" alt="Flashcard AI user uploading a screenshot for flashcard conversion" />
+                <figcaption>Users upload a study screenshot, and the app scans the text to identify key concepts.</figcaption>
+              </figure>
+              <figure class="project-visual">
+                <img src="assets/flashcard ai 2.jpeg" alt="Generated flashcards from a screenshot displayed in the Flashcard AI interface" />
+                <figcaption>Generated flashcards are shown with concise prompts and answers, making study review easier and faster.</figcaption>
+              </figure>
+            </div>
+            <div class="tags">
+              <span>Next.js</span><span>LLM</span><span>OCR</span><span>Study UX</span>
+            </div>
+            <a class="card-link" href="https://github.com/Azleem01/Flashcard-ai" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+            </a>
+          </article>
+
+          <article class="card project-card reveal" id="anti-deepfaker">
+            <div class="card-top">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><circle cx="12" cy="11" r="2.4"/></svg>
+              </span>
+              <span class="card-flag subtle">AI safety research</span>
+            </div>
+            <h3 class="card-title">Anti-Deepfake Protector</h3>
+            <p class="card-body">
+              An adversarial image shield that subtly protects photos from unwanted editing by generative AI.
+              Visuals are coming soon once the capture is available, but the technique is already chosen and documented.
+            </p>
+            <div class="project-placeholder">
+              <span>Image coming soon</span>
+            </div>
+            <div class="tags">
+              <span>Adversarial ML</span><span>PyTorch</span><span>Diffusers</span><span>AI Safety</span>
+            </div>
+            <a class="card-link" href="https://github.com/Azleem01/ANTI-DEEPFAKER" target="_blank" rel="noopener">
+              View on GitHub
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Azeez Aleem</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
