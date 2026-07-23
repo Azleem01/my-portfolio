@@ -1,4 +1,4 @@
-/* Azeez Aleem — portfolio interactions */
+/* Azeez Aleem portfolio interactions */
 (function () {
   "use strict";
 

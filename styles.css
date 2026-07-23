@@ -1,5 +1,5 @@
 /* ===================================================================
-   Azeez Aleem — Portfolio
+   Azeez Aleem Portfolio
    Liquid Chrome / Glassmorphism design system
    =================================================================== */
 
@@ -23,7 +23,7 @@
   --dark-2: #171c23;
   --dark-line: rgba(255, 255, 255, 0.08);
 
-  /* accent — cool steel blue */
+  /* accent cool steel blue */
   --accent: #3f7fd6;
   --accent-soft: #6ea3e8;
 
@@ -326,17 +326,18 @@ img { max-width: 100%; display: block; }
 }
 .card:hover { transform: translateY(-6px); box-shadow: 0 26px 50px -22px rgba(30,40,60,0.5); }
 
-.card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
-.card-icon {
-  width: 46px; height: 46px;
-  border-radius: 13px;
-  display: grid; place-items: center;
-  color: var(--accent);
-  background: linear-gradient(160deg, #ffffff, #d7dde6);
-  border: 1px solid var(--chrome-line);
-  box-shadow: var(--shadow-chrome);
+.card-image {
+  margin-bottom: 20px;
+  border-radius: 18px;
+  overflow: hidden;
+  min-height: 170px;
+  background: rgba(234,238,244,0.9);
 }
-.card-flag {
+.card-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
   font-family: var(--font-mono);
   font-size: 0.66rem;
   letter-spacing: 0.1em;
